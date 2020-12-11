@@ -14,13 +14,7 @@ def main():
 			estimate = theta[0] + theta[1] * x
 			print (estimate)
 	else:
-		try:
-			x = np.longdouble(input("What's the mileage of your car: "))
-		except:
-			print ("Error, please fill in a correct number")
-			exit()
-		print(0)
-		print (colored("No theta.csv file. You have to learn before making predictions.", "red"))
+		print (colored("No theta.csv file. You have to run the computation before making predictions.", "red"))
 
 if __name__ == "__main__":
 	main()
